@@ -1,5 +1,6 @@
 # Basic Access Controls API
 # by Daniel Pattathil (dp865) and Rafay Safi (rzs7)
+# easily viewable on https://github.com/dpattathil/accessAPI/
 
 This project just lets you set up users, objects, and groups for the users/objects
 
@@ -11,26 +12,34 @@ This project follows the basic concept of storing information related to access 
 
 # Usage
 
-python3 access.py [API call flag] [values]
-
-[API call flag] can be any of the operations supported:
+"make clean" to remove any .txt files
 
 
--au is to AddUser ex) -au username password
 
--a is to Authenticate ex) -a username password
+python3 access.py {API call flag} {values}
 
--autg is to AddUserToGroup ex) -autg username groupname
+{values} are just a series of strings for each operation supported
 
--aotg is to AddObjectToGroup ex) -aotg objectname groupname
+{API call flag} can be any of the operations supported:
 
--aa is to AddAccess ex) -aa operation user-groupname <object-groupname>
+
+-au is to AddUser ex) python3 access.py -au username password
+
+-a is to Authenticate ex) python3 access.py -a username password
+
+-autg is to AddUserToGroup ex) python3 access.py -autg username groupname
+
+-aotg is to AddObjectToGroup ex) python3 access.py -aotg objectname groupname
+
+-aa is to AddAccess ex) python3 access.py -aa operation user-groupname [object-groupname]
   
--ca is to CanAccess ex) -cu operation  username <objectname>
+-ca is to CanAccess ex) python3 access.py -cu operation  username [objectname]
 
 # Testing 
 
-Used a good bit of manual testing to make sure errors were provided in incorrec$
+Used a good bit of manual testing to make sure errors were provided correctly.
+
+Checked that reading and writing to files worked successfully.
 
 # Example workflow 
 
