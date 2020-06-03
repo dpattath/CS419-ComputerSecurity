@@ -1,6 +1,6 @@
 # Basic Access Controls API
-# by Daniel Pattathil (dp865) and Rafay Safi (rzs7)
-# easily viewable on https://github.com/dpattathil/CS419-ComputerSecurity
+# by dt-p
+# easily viewable on https://github.com/dt-p/CS419-ComputerSecurity
 
 This project just lets you set up users, objects, and groups for the users/objects
 
